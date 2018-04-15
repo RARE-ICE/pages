@@ -64,30 +64,16 @@
 					
 						<!-- Content -->
 							<div id="content" class="8u skel-cell-important">
+								{% for post in site.posts %}
 								<section>
 									<header>
-										<h2>Fusce ultrices fringilla</h2>
+										<h2>{{ post.title }}</h2>
 										<span class="byline">Maecenas vitae orci vitae tellus feugiat</span>
 									</header>
-									<p>This is <strong>Aqueous</strong>, a responsive HTML5 site template freebie. Released for free under the Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at or follow us on.</p>
-									<a href="#" class="button">More Details</a>
+									<p>{{ post.date | date_to_string }}</p>
+									<a href="{{ site.baseurl }}{{ post.url }}" class="button">More Details</a>
 								</section>
-								<section>
-									<header>
-										<h2>Fusce ultrices fringilla</h2>
-										<span class="byline">Maecenas vitae orci vitae tellus feugiat</span>
-									</header>
-									<p>This is <strong>Aqueous</strong>, a responsive HTML5 site template freebie. Released for free under the Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at or follow us on.</p>
-									<a href="#" class="button">More Details</a>
-								</section>
-								<section>
-									<header>
-										<h2>Fusce ultrices fringilla</h2>
-										<span class="byline">Maecenas vitae orci vitae tellus feugiat</span>
-									</header>
-									<p>This is <strong>Aqueous</strong>, a responsive HTML5 site template freebie. Released for free under the Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at or follow us on.</p>
-									<a href="#" class="button">More Details</a>
-								</section>
+								{% endfor %}
 							</div>
 							
 						<!-- Sidebar -->
