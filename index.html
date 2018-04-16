@@ -3,8 +3,7 @@ layout: default
 title: 你好，世界
 ---
 
-<div id="content" class="8u skel-cell-important">
-	{% for post in site.posts %}
+{% for post in site.posts %}
 	<section>
 		<header>
 			<h2>{{ post.jianjie }}</h2>
@@ -13,5 +12,4 @@ title: 你好，世界
 		<p>{{ post.date | date_to_string }}</p>
 		<a href="{{ site.baseurl }}{{ post.url }}" class="button">More Details</a>
 	</section>
-	{% endfor %}
-</div>
+{% endfor %}
