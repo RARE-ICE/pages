@@ -44,35 +44,13 @@
 		
 	<!-- Main -->
 		<div id="main-wrapper">
-			
-			<div id="banner">
-				<div class="container">
-					<div class="row">
-						{{ content }}
-					</div>
-				</div>
-			</div>
-			<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
-
 			<div class="container">
 				<div id="main">
-	
 					<div class="row">
-					
 						<!-- Content -->
 							<div id="content" class="8u skel-cell-important">
-								{% for post in site.posts %}
-								<section>
-									<header>
-										<h2>{{ post.title }}</h2>
-										<span class="byline">Maecenas vitae orci vitae tellus feugiat</span>
-									</header>
-									<p>{{ post.date | date_to_string }}</p>
-									<a href="{{ site.baseurl }}{{ post.url }}" class="button">More Details</a>
-								</section>
-								{% endfor %}
+								{{ content }}
 							</div>
-							
 						<!-- Sidebar -->
 							<div id="sidebar" class="4u">
 								<section>
