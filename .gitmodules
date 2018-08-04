@@ -1,0 +1,3 @@
+[submodule "src/projects/vue-components"]
+	path = src/projects/vue-components
+	url = https://github.com/gumx-w/vue-components.git
