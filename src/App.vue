@@ -88,7 +88,7 @@
 </template>
 
 <script>
-import {VueComponent} from "./subModules/index.js"
+import {VueComponent} from "./projects/index.js"
 
 export default { 
   name: 'app',
